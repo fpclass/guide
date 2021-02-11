@@ -31,20 +31,20 @@ Also recall the definition of \haskellIn{add} from \Cref{sec:lecture-10}:
 
 \task[task:succ-comm]{Prove the following property about addition just by rewriting one side of the equation until you end up with the other side:
 	\begin{displaymath}
-	\forall n :: \mathit{Nat} . S~n = \mathit{add}~(S~Z)~n
+	\forall n :: \mathit{Nat} . \quad  S~n = \mathit{add}~(S~Z)~n
 	\end{displaymath}
 	You should show each step of the proof along with a comment to say what you have done at that particular step, as shown in the lecture and the proofs in \Cref{sec:lecture-10}.
 }
 
 \task[task:successor-commutes]{Prove the following property about addition by induction on $n$. For this proof, you will need to make use of some of the other properties you know about $\mathit{add}$, including the one you proved for Exercise \ref{task:succ-comm}.
 	\begin{displaymath}
-	\forall n~m :: \mathit{Nat} . \mathit{add}~(S~n)~m = \mathit{add}~n~(S~m)
+	\forall n~m :: \mathit{Nat} . \quad  \mathit{add}~(S~n)~m = \mathit{add}~n~(S~m)
 	\end{displaymath}
 }
 
 \task[task:add-commutes]{Finally, using all the properties you know about $\mathit{add}$ so far, prove that $\mathit{add}$ commutes:
 	\begin{displaymath}
-	\forall n~m :: \mathit{Nat} . \mathit{add}~n~m = \mathit{add}~m~n
+	\forall n~m :: \mathit{Nat} . \quad  \mathit{add}~n~m = \mathit{add}~m~n
 	\end{displaymath}
 }
 
