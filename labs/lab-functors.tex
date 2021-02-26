@@ -131,7 +131,7 @@ runState fresh 4                                   ==> (4,5)
 runState fresh 7                                   ==> (7,8)
 let (x,s') = runState fresh 7 in runState fresh s' ==> (8,9)
 \end{minted}
-While this is currently not overly interesting and a rather clunky, these definitions will provide the foundations for much more exciting things that are yet to come...
+While this is currently not overly interesting and rather clunky, these definitions will provide the foundations for much more exciting things that are yet to come...
 
 \task{Meanwhile, back to the grind: the \texttt{\small State} type is a functor. Complete the definition of \haskellIn{fmap} for it. Some examples of it in action:}
 \begin{minted}{haskell}
