@@ -83,9 +83,11 @@ The skeleton code contains a bunch of files, most of which you do not need to to
 \begin{minted}{haskell}
 type Memory = [(String, Int)]
 \end{minted}
-It is possible for things to go wrong when interpreting a program. There are two sorts of errors which may occur. These are represented by the following data type:
+It is possible for things to go wrong when interpreting a program. There are three sorts of errors which may occur. These are represented by the following data type:
 \begin{minted}{haskell}
-data Err = DivByZeroError | UninitialisedMemory String
+data Err = DivByZeroError 
+         | NegativeExponentError 
+		 | UninitialisedMemory String
 \end{minted}
 The types representing the language itself are defined in \texttt{\small src/Language.hs}. You should have a look at this file yourself, but an overview of the most important types is below. A program is a list of statements:
 \begin{minted}{haskell}
